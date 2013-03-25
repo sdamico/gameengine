@@ -23,7 +23,7 @@ bool GraphicsEngine::initGL() {
   //Set video mode swidth*sheight*userBPP
   SDL_SetVideoMode(
       swidth, sheight, 0,
-      SDL_OPENGL | SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER | SDL_FULLSCREEN);
+      SDL_OPENGL | SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER );
 
   width = swidth;
   height = sheight;
