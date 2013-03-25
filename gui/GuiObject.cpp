@@ -1,4 +1,5 @@
 #include "GuiObject.h"
+#include "../engine.h"
 
 GuiObject::GuiObject() {
 
@@ -29,7 +30,9 @@ void GuiObject::init(std::string ident, std::string contents,
 }
 
 void GuiObject::checkActivation(int mx, int my, int b) {
-  //cout<<mx<<" "<<my<<" "<<b<<endl;
+  int swidth = GraphicsEngine::get().getWidth();
+  int sheight = GraphicsEngine::get().getHeight();
+
   if (onActivate) {
     if (SDL_GetTicks() - clickTimer > 250
         && ((posTopLeft.x + 1.0f) / 2.0f) * swidth <= mx

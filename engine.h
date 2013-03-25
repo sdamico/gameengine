@@ -94,6 +94,11 @@ class GraphicsEngine : public Singleton<GraphicsEngine> {
 
   //Take screen shot
   void screenShot();
+
+  // Get width and height
+  int getWidth();
+
+  int getHeight();
 };
 
 #endif

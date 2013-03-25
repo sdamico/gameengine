@@ -1,9 +1,7 @@
 #include "particle.h"
 
 ParticleMgr::ParticleMgr() {
-//	if(!particles){
   std::cout << "[Starting Particle Engine]" << std::endl;
-  //particles=new Particle[MAX_PARTICLES];
   for (int i = 0; i < MAX_PARTICLES; i++) {
     particles[i].state = 0;
     particles[i].type = 1;
@@ -28,17 +26,9 @@ ParticleMgr::ParticleMgr() {
     particles[i].fadestep = 0;
 
   }
-  //}
 
 }
 ParticleMgr::~ParticleMgr() {
-  //delete particles;
-  /*try {
-   delete particles;
-   } catch (std::exception e)
-   {
-   std::cout<<e.what()<<std::endl;
-   }*/
 
   std::cout << "[Ending Particle Engine]" << std::endl;
 }
@@ -81,7 +71,6 @@ void ParticleMgr::startParticle(int type, glRGBA color, std::string t,
 }
 
 void ParticleMgr::handle() {
-  //float t=(globalTime);
   numParticles = 0;
   Vector temp;
   for (int i = 0; i < MAX_PARTICLES; i++) {
@@ -124,33 +113,22 @@ void ParticleMgr::render() {
   glPushMatrix();
   glDisable(GL_LIGHTING);
   glMaterialfv(GL_BACK, GL_EMISSION, (const float[4]) {1.0f,1.0f,1.0f,1.25f});
-  //glEnable (GL_BLEND);
   glDepthMask(GL_FALSE);
 
   glBlendFunc(GL_SRC_ALPHA, GL_ONE);
-  //glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
-  //glPointSize(4.0f);
 
   glEnable(GL_POINT_SPRITE);
   glTexEnvi(GL_POINT_SPRITE, GL_COORD_REPLACE, GL_TRUE);
-  //glTexEnvi(GL_POINT_SPRITE, GL_COORD_REPLACE, GL_FALSE);
   glEnable(GL_POINT_SMOOTH);
 
   glPointParameterfv(GL_POINT_SIZE_MAX, (const float[1]) {5000.0f});
-  /*
-   float scale = 0.01f;
-   float s[3] = {0.0f, 0.0f, scale};
-   glPointParameterfv(GL_POINT_DISTANCE_ATTENUATION, s);
-   glPointSize(100.0f);
-   if(particles[0].texptr)particles[0].texptr->bind();
-   */
 
   for (int i = 0; i < MAX_PARTICLES; i++) {
     if (particles[i].state == 1) {
       float scale = 1.0f / (particles[i].curScale * particles[i].curScale);
       float s[3] = { 0.0f, 0.0f, scale };
       glPointParameterfv(GL_POINT_DISTANCE_ATTENUATION, s);
-      glPointSize(100.0f * particles[i].curScale);
+      glPointSize(10.0f * particles[i].curScale);
       particles[i].texptr->bind();
       glBegin(GL_POINTS);
       glColor4f(particles[i].curColor.r, particles[i].curColor.g,
@@ -160,68 +138,10 @@ void ParticleMgr::render() {
     }
   }
 
-  /*
-   glEnableClientState(GL_VERTEX_ARRAY);
-   glEnableClientState(GL_COLOR_ARRAY);
-
-   glColorPointer(4,GL_FLOAT,sizeof(Particle),&particles[0].curColor.r);
-   glVertexPointer(3,GL_FLOAT,sizeof(Particle),&particles[0].pos.x);
-
-   glDrawArrays(GL_POINTS,0,numParticles);
-
-   glDisableClientState(GL_COLOR_ARRAY);
-   glDisableClientState(GL_VERTEX_ARRAY);
-   */
   glDisable(GL_POINT_SPRITE);
   glTexEnvi(GL_POINT_SPRITE, GL_COORD_REPLACE, GL_FALSE);
   glDisable(GL_POINT_SMOOTH);
 
-  /*
-   double m[16];
-   Camera::get().getMatrix(m);
-   for(int i=0;i<MAX_PARTICLES;i++)
-   {
-   if(particles[i].state==1)
-   {
-
-   glPushMatrix();
-   //glLoadIdentity();
-   //glDisable(GL_TEXTURE_2D);
-
-   //TextureMgr::get().UseTexture(particles[i].tex);
-   particles[i].texptr->bind();
-
-   //glTexEnvf(GL_TEXTURE_ENV,GL_TEXTURE_ENV_MODE,GL_BLEND);
-   //glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
-   //glScalef(2.0f,2.0f,2.0f);
-
-   //Float translation????? Speed vs. accuracy????
-   glTranslatef(particles[i].pos.x,particles[i].pos.y,particles[i].pos.z);
-   glScalef(.03f*particles[i].curScale,.03f*particles[i].curScale,.03f*particles[i].curScale);
-
-
-   glMultMatrixd(m);
-   glRotatef(90.0f,0.0f,0.0f,1.0f);
-   glBegin(GL_QUADS);
-
-   glColor4f(particles[i].curColor.r,particles[i].curColor.g,particles[i].curColor.b, particles[i].curColor.a);
-   glTexCoord2f(0.0f,0.0f);
-   glVertex3f(1.0f,-1.0f,0.0f);
-   glTexCoord2f(1.0f,0.0f);
-   glVertex3f(-1.0f,-1.0f,0.0f);
-   glTexCoord2f(1.0f,1.0f);
-   glVertex3f(-1.0f,1.0f,0.0f);
-   glTexCoord2f(0.0f,1.0f);
-   glVertex3f(1.0f,1.0f,0.0f);
-
-   //glVertex2f(particles[i].x,particles[i].y);
-   glColor4f(1.0f,1.0f,1.0f,1.0f);
-   glEnd();
-   //glEnable(GL_TEXTURE_2D);
-   glPopMatrix();
-   }
-
-   }*/
   glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
   glDepthMask(GL_TRUE);
   glEnable(GL_LIGHTING);

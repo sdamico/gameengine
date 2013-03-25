@@ -25,10 +25,6 @@
 #include <cstdarg>
 #include <memory>
 
-//Width and height of program
-#define swidth 1680
-#define sheight 1050
-
 #define PI 3.14159265358979323846f
 
 //Degree to radian conversion macros

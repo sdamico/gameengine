@@ -20,13 +20,16 @@ bool GraphicsEngine::initGL() {
   //Initialize SDL Video and Joystick
   SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK);
 
+  // Hardcode width and height for now
+  width = 1680;
+  height = 1050;
+
   //Set video mode swidth*sheight*userBPP
   SDL_SetVideoMode(
-      swidth, sheight, 0,
+      width, height, 0,
       SDL_OPENGL | SDL_HWSURFACE | SDL_GL_DOUBLEBUFFER );
 
-  width = swidth;
-  height = sheight;
+
 
   //Enable keyboard key repeat
   SDL_EnableKeyRepeat(1, 1);
@@ -35,7 +38,7 @@ bool GraphicsEngine::initGL() {
   SDL_GetMouseState(&mouseX, &mouseY);
 
   //Set OpenGL viewport to swidth*sheight
-  glViewport(0, 0, swidth, sheight);
+  glViewport(0, 0, width, height);
 
   //Enable double buffering
   SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
@@ -71,7 +74,7 @@ bool GraphicsEngine::initGL() {
   glLoadIdentity();
 
   //Set a nice perspective ratio
-  GLfloat ratio = (GLfloat) swidth / (GLfloat) sheight;
+  GLfloat ratio = (GLfloat) width / (GLfloat) height;
   //gluPerspective( 45.0f, ratio, 0.1f, 1000.0f );
   gluPerspective(60.0f, ratio, 0.8f, 1200000.0f);
   //Nice perpective correction
@@ -165,3 +168,12 @@ void GraphicsEngine::screenShot() {
   SDL_FreeSurface(screen);
 }
 
+int GraphicsEngine::getWidth()
+{
+  return width;
+}
+
+int GraphicsEngine::getHeight()
+{
+  return height;
+}
