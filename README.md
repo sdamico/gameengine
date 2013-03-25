@@ -9,6 +9,6 @@ If you're interested in forking this, be sure to talk to me first as it's _very 
 
 Screenshots:
 
-![Screenshot 1](/screenshots/screen1.bmp)
+![Screenshot 1](/screenshots/screenshot-1.bmp)
 
-![Screenshot 2](/screenshots/screen2.bmp)
+![Screenshot 2](/screenshots/screenshot-2.bmp)
