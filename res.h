@@ -38,43 +38,36 @@
 //Randomize between 2 values
 #define RAND(a,b) b*rand()/(RAND_MAX - a)
 
-
-
 /*struct Vertex
-{
-	float x,y,z;
-};*/
+ {
+ float x,y,z;
+ };*/
 
 //2D Vertex struct
-struct Vertex2D
-{
-	float x,y;
+struct Vertex2D {
+  float x, y;
 };
 
-struct Vertex3D
-{
-	float x,y,z;
+struct Vertex3D {
+  float x, y, z;
 };
 
 //2D UV texture coordinate struct
-struct UVTexCoord
-{
-	float u,v;
+struct UVTexCoord {
+  float u, v;
 };
 
 //Face struct
-struct Face
-{
-	unsigned short p1,p2,p3;
+struct Face {
+  unsigned short p1, p2, p3;
 };
 
 //RGBA struct
-struct glRGBA
-{
-	float r;
-	float g;
-	float b;
-	float a;
+struct glRGBA {
+  float r;
+  float g;
+  float b;
+  float a;
 };
 
 #endif

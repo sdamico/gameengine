@@ -14,16 +14,14 @@
 #include "../model/ModelMgr.h"
 #include "../physics/objectmgr.h"
 
-
-class Scenario
-{
-	std::string id;
-public:
-	Scenario();
-	Scenario(std::string id, std::string file);
-	virtual ~Scenario();
-	bool load(std::string file);
-	std::string getID();
+class Scenario {
+  std::string id;
+ public:
+  Scenario();
+  Scenario(std::string id, std::string file);
+  virtual ~Scenario();
+  bool load(std::string file);
+  std::string getID();
 };
 
 #endif /* SCENARIO_H_ */

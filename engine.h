@@ -24,80 +24,77 @@
 #include "gameplay/Scenario.h"
 
 //Graphics Engine Class (singleton)
-class GraphicsEngine : public Singleton<GraphicsEngine>
-{
-	//Sine and cosine lookup tables
-	double COS[360];
-	double SIN[360];
+class GraphicsEngine : public Singleton<GraphicsEngine> {
+  //Sine and cosine lookup tables
+  double COS[360];
+  double SIN[360];
 
-	//Make sine and cosine lookup tables
-	void makeTables();
+  //Make sine and cosine lookup tables
+  void makeTables();
 
-	//Screen Size
-	int width;
-	int height;
+  //Screen Size
+  int width;
+  int height;
 
-	//Mouse position variables
-	int mouseX,mouseY;
+  //Mouse position variables
+  int mouseX, mouseY;
 
-	//SDL Event variable
-	SDL_Event event;
+  //SDL Event variable
+  SDL_Event event;
 
-	//SDL keyboard variable
-	Uint8 *keys;
+  //SDL keyboard variable
+  Uint8 *keys;
 
-	Terminal *term;
+  Terminal *term;
 
-	bool showTerminal;
+  bool showTerminal;
 
-	long keyInterval;
+  long keyInterval;
 
-	long screenshotKeyInterval;
+  long screenshotKeyInterval;
 
-	bool done;
+  bool done;
 
-	bool renderPlayer;
+  bool renderPlayer;
 
-	int numSamples;
+  int numSamples;
 
-	int curSample;
+  int curSample;
 
-public:
+ public:
 
-	static std::string version;
+  static std::string version;
 
-	//Constructor - Runs Init() and InitGL()
-	GraphicsEngine();
+  //Constructor - Runs Init() and InitGL()
+  GraphicsEngine();
 
-	//Destructor - Runs End() and EndGL()
-	virtual ~GraphicsEngine();
+  //Destructor - Runs End() and EndGL()
+  virtual ~GraphicsEngine();
 
-	//Initializes OpenGL to standard setup
-	bool initGL();
+  //Initializes OpenGL to standard setup
+  bool initGL();
 
-	//User-defined initialization function
-	bool init();
+  //User-defined initialization function
+  bool init();
 
-	//User-defined end function
-	bool end();
+  //User-defined end function
+  bool end();
 
-	//Ends OpenGL
-	bool endGL();
+  //Ends OpenGL
+  bool endGL();
 
-	//Show debugging information - user defined
-	void renderDebugInfo();
+  //Show debugging information - user defined
+  void renderDebugInfo();
 
-	//Main function - user defined
-	void main();
+  //Main function - user defined
+  void main();
 
-	//Input handling function - user defined
-	void processInput();
+  //Input handling function - user defined
+  void processInput();
 
-	//Take screen shot
-	void screenShot();
+  //Take screen shot
+  void screenShot();
 };
-
-
 
 #endif
 

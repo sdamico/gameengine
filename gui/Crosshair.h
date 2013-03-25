@@ -5,14 +5,13 @@
 
 #include "GuiObject.h"
 
-class Crosshair : public GuiObject
-{
-public:
-	Crosshair();
-	Crosshair(std::string ident, Vector topLeft, Vector bottomRight);
-	virtual ~Crosshair();
+class Crosshair : public GuiObject {
+ public:
+  Crosshair();
+  Crosshair(std::string ident, Vector topLeft, Vector bottomRight);
+  virtual ~Crosshair();
 
-	void render();
+  void render();
 };
 
 #endif /*CROSSHAIR_H_*/

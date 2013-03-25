@@ -6,26 +6,26 @@
 #include "../time/time.h"
 #include "FactionMgr.h"
 
-class SpaceObject : public Object
-{
-protected:
-	float topAccel;
-	float topTurnSpeed;
-	float thrustVecThreshold;
-public:
+class SpaceObject : public Object {
+ protected:
+  float topAccel;
+  float topTurnSpeed;
+  float thrustVecThreshold;
+ public:
 
-	SpaceObject();
-	SpaceObject(std::string id, std::string factionID, std::string model, Vector pos, Vector velocity, double mass, float scale);
-	virtual ~SpaceObject();
-	void action();
-	void track(std::string objectName);
-	void track(Vector p);
-	void pointTowards(std::string objectName);
-	void stop();
-	void thrust(double percentage);
-	void matchVelocity(std::string objectName);
-	void handleCollision(Object *other);
-	virtual std::string getTargetID();
+  SpaceObject();
+  SpaceObject(std::string id, std::string factionID, std::string model,
+              Vector pos, Vector velocity, double mass, float scale);
+  virtual ~SpaceObject();
+  void action();
+  void track(std::string objectName);
+  void track(Vector p);
+  void pointTowards(std::string objectName);
+  void stop();
+  void thrust(double percentage);
+  void matchVelocity(std::string objectName);
+  void handleCollision(Object *other);
+  virtual std::string getTargetID();
 };
 
 #endif /*SPACEOBJECT_H_*/
