@@ -1,0 +1,252 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+BOTTOM_LEFT	tga/tga.h	27;"	d
+BOTTOM_RIGHT	tga/tga.h	28;"	d
+Bind	texture/texture.cpp	/^bool texture::Bind()$/;"	f	class:texture
+COS	engine.h	/^	double COS[360];$/;"	m	class:engine
+CTargaImage	tga/tga.cpp	/^CTargaImage::CTargaImage() : m_pImageData(NULL)$/;"	f	class:CTargaImage
+CTargaImage	tga/tga.h	/^class CTargaImage$/;"	c
+CalcDelta	time/time.cpp	/^void GlobalTime::CalcDelta()$/;"	f	class:GlobalTime
+ConvertRGBAToRGB	tga/tga.cpp	/^bool CTargaImage::ConvertRGBAToRGB()$/;"	f	class:CTargaImage
+ConvertRGBToRGBA	tga/tga.cpp	/^bool CTargaImage::ConvertRGBToRGBA(unsigned char alphaValue)$/;"	f	class:CTargaImage
+DEG2RAD	res.h	21;"	d
+DrawParticles	physics/particle.cpp	/^void ParticleMgr::DrawParticles()$/;"	f	class:ParticleMgr
+ENGINE_H	engine.h	2;"	d
+End	test.cpp	/^bool engine::End()$/;"	f	class:engine
+EndGL	engine.cpp	/^bool engine::EndGL()$/;"	f	class:engine
+FONT_H	font/font.h	3;"	d
+FlipVertical	tga/tga.cpp	/^bool CTargaImage::FlipVertical()$/;"	f	class:CTargaImage
+FontLib	font/font.h	/^class FontLib$/;"	c
+GLOBALTIME_H	time/time.h	4;"	d
+GRAVCONST	physics/gravitywell.cpp	2;"	d	file:
+GetHeight	tga/tga.h	/^	unsigned short GetHeight() { return m_height; }$/;"	f	class:CTargaImage
+GetImage	tga/tga.h	/^	unsigned char *GetImage() { return m_pImageData; }$/;"	f	class:CTargaImage
+GetImageFormat	tga/tga.h	/^	unsigned short GetImageFormat() { return m_imageDataFormat; }$/;"	f	class:CTargaImage
+GetKeyPress	test.cpp	/^void engine::GetKeyPress()$/;"	f	class:engine
+GetWidth	tga/tga.h	/^	unsigned short GetWidth() { return m_width; }$/;"	f	class:CTargaImage
+GlobalTime	time/time.cpp	/^GlobalTime::GlobalTime()$/;"	f	class:GlobalTime
+GlobalTime	time/time.h	/^class GlobalTime : public Singleton<GlobalTime>$/;"	c
+GravityWell	physics/gravitywell.h	/^class GravityWell:public Object$/;"	c
+HandleParticles	physics/particle.cpp	/^void ParticleMgr::HandleParticles()$/;"	f	class:ParticleMgr
+IMAGE_DATA_UNSIGNED_BYTE	tga/tga.h	21;"	d
+IMAGE_LUMINANCE	tga/tga.h	18;"	d
+IMAGE_RGB	tga/tga.h	16;"	d
+IMAGE_RGBA	tga/tga.h	17;"	d
+Init	test.cpp	/^bool engine::Init()$/;"	f	class:engine
+InitGL	engine.cpp	/^bool engine::InitGL()$/;"	f	class:engine
+Instance	mm/singleton.h	/^	static T& Instance()$/;"	f	class:Singleton
+KillFont	font/font.cpp	/^void FontLib::KillFont()$/;"	f	class:FontLib
+LIST_H	mm/list.h	2;"	d
+List	mm/list.h	/^	List()$/;"	f	class:List
+List	mm/list.h	/^template <typename C> class List$/;"	c
+ListElement	mm/list.h	/^	ListElement()$/;"	f	class:ListElement
+ListElement	mm/list.h	/^template <typename C> class ListElement$/;"	c
+Load	texture/texture.cpp	/^bool texture::Load(char *file)$/;"	f	class:texture
+Load	tga/tga.cpp	/^bool CTargaImage::Load(char *filename)$/;"	f	class:CTargaImage
+MAX_PARTICLES	res.h	19;"	d
+MakeTables	engine.cpp	/^void engine::MakeTables()$/;"	f	class:engine
+OBJECT_H	physics/object.h	2;"	d
+Object	physics/object.cpp	/^Object::Object()$/;"	f	class:Object
+Object	physics/object.h	/^class Object$/;"	c
+PARTICLE_H	physics/particle.h	2;"	d
+PI	res.h	20;"	d
+Particle	physics/particle.h	/^struct Particle$/;"	s
+ParticleMgr	physics/particle.cpp	/^ParticleMgr::ParticleMgr()$/;"	f	class:ParticleMgr
+ParticleMgr	physics/particle.h	/^class ParticleMgr$/;"	c
+RAD2DEG	res.h	22;"	d
+RAND	res.h	23;"	d
+RESOURCE_H	res.h	2;"	d
+Release	texture/texture.cpp	/^bool texture::Release() $/;"	f	class:texture
+Release	tga/tga.cpp	/^void CTargaImage::Release()$/;"	f	class:CTargaImage
+Render	test.cpp	/^void engine::Render()$/;"	f	class:engine
+SIN	engine.h	/^	double SIN[360];$/;"	m	class:engine
+SINGLETON_H	mm/singleton.h	2;"	d
+Singleton	mm/singleton.h	/^template<typename T> class Singleton$/;"	c
+StartFrame	time/time.cpp	/^void GlobalTime::StartFrame()$/;"	f	class:GlobalTime
+StartParticle	physics/particle.cpp	/^void ParticleMgr::StartParticle(int type, glRGBA color, texture *t,float scale, float lifetime, Vector ps, Vector v)$/;"	f	class:ParticleMgr
+SwapRedBlue	tga/tga.cpp	/^void CTargaImage::SwapRedBlue()$/;"	f	class:CTargaImage
+TEXTURE_H	texture/texture.h	2;"	d
+TGATypes	tga/tga.h	/^enum TGATypes$/;"	g
+TGA_GRAYSCALE	tga/tga.h	/^	TGA_GRAYSCALE = 3,$/;"	e	enum:TGATypes
+TGA_GRAYSCALE_RLE	tga/tga.h	/^	TGA_GRAYSCALE_RLE = 11$/;"	e	enum:TGATypes
+TGA_INDEXED	tga/tga.h	/^	TGA_INDEXED = 1,$/;"	e	enum:TGATypes
+TGA_INDEXED_RLE	tga/tga.h	/^	TGA_INDEXED_RLE = 9,$/;"	e	enum:TGATypes
+TGA_NODATA	tga/tga.h	/^	TGA_NODATA = 0,$/;"	e	enum:TGATypes
+TGA_RGB	tga/tga.h	/^	TGA_RGB = 2,$/;"	e	enum:TGATypes
+TGA_RGB_RLE	tga/tga.h	/^	TGA_RGB_RLE = 10,$/;"	e	enum:TGATypes
+TOP_LEFT	tga/tga.h	29;"	d
+TOP_RIGHT	tga/tga.h	30;"	d
+Triangle	res.h	/^struct Triangle$/;"	s
+VECTOR_H	vector/vector.h	3;"	d
+Vector	vector/vector.h	/^class Vector$/;"	c
+Vertex	res.h	/^struct Vertex $/;"	s
+Vertex2D	res.h	/^struct Vertex2D$/;"	s
+__TARGA_LIB	tga/tga.h	2;"	d
+a	res.h	/^	float a;$/;"	m	struct:glRGBA
+a	tga/tga.h	/^	unsigned char a;$/;"	m	struct:rgba_t
+accelerate	physics/object.cpp	/^void Object::accelerate()$/;"	f	class:Object
+acceleration	physics/object.h	/^	Vector acceleration;$/;"	m	class:Object
+addElement	mm/list.h	/^	void addElement(C *add)$/;"	f	class:List
+applyForce	physics/object.cpp	/^void Object::applyForce(Vector force)$/;"	f	class:Object
+b	res.h	/^	float b;$/;"	m	struct:glRGBA
+b	tga/tga.h	/^	unsigned char b;$/;"	m	struct:rgb_t
+b	tga/tga.h	/^	unsigned char b;$/;"	m	struct:rgba_t
+base	engine.h	/^GLuint base;$/;"	m	class:engine
+base	font/font.h	/^	GLuint base;$/;"	m	class:FontLib
+bpp	tga/tga.h	/^	unsigned char bpp;$/;"	m	struct:tgaheader_t
+buildFont	font/font.cpp	/^void FontLib::buildFont(void )$/;"	f	class:FontLib
+calcNormal	vector/vector.cpp	/^void Vector::calcNormal(Vector v1, Vector v2, Vector v3)$/;"	f	class:Vector
+camR	engine.h	/^	double camX,camY,camZ,camR,camT;$/;"	m	class:engine
+camT	engine.h	/^	double camX,camY,camZ,camR,camT;$/;"	m	class:engine
+camX	engine.h	/^	double camX,camY,camZ,camR,camT;$/;"	m	class:engine
+camY	engine.h	/^	double camX,camY,camZ,camR,camT;$/;"	m	class:engine
+camZ	engine.h	/^	double camX,camY,camZ,camR,camT;$/;"	m	class:engine
+cnt1	engine.h	/^GLfloat cnt1;$/;"	m	class:engine
+cnt1	font/font.h	/^	GLfloat cnt1;$/;"	m	class:FontLib
+cnt2	engine.h	/^GLfloat cnt2;$/;"	m	class:engine
+cnt2	font/font.h	/^	GLfloat cnt2;$/;"	m	class:FontLib
+colorMapSpec	tga/tga.h	/^	unsigned char colorMapSpec[5];$/;"	m	struct:tgaheader_t
+colorMapType	tga/tga.h	/^	unsigned char colorMapType;$/;"	m	struct:tgaheader_t
+counter	physics/particle.h	/^	long counter;$/;"	m	struct:Particle
+curColor	physics/particle.h	/^	glRGBA curColor;$/;"	m	struct:Particle
+current	mm/list.h	/^	ListElement<C> *current;$/;"	m	class:List
+currentElement	mm/list.cpp	/^ListElement<class C> List<class C>::currentElement()$/;"	f	class:List
+currentElement	mm/list.h	/^	C *currentElement()$/;"	f	class:List
+deleteElement	mm/list.cpp	/^bool List<class C>::deleteElement(ListElement<C> w)$/;"	f	class:List
+deleteElement	mm/list.h	/^	bool deleteElement(ListElement<C> *w)$/;"	f	class:List
+detectCollision	physics/object.cpp	/^bool Object::detectCollision(Object *other)$/;"	f	class:Object
+done	engine.h	/^	int done;$/;"	m	class:engine
+endColor	physics/particle.h	/^	glRGBA endColor;$/;"	m	struct:Particle
+engine	engine.cpp	/^engine::engine(){}$/;"	f	class:engine
+engine	engine.h	/^class engine$/;"	c
+event	engine.h	/^	SDL_Event event;$/;"	m	class:engine
+fadestep	physics/particle.h	/^	float fadestep;$/;"	m	struct:Particle
+first	mm/list.h	/^	ListElement<C> *first;$/;"	m	class:List
+font	engine.h	/^	FontLib font;$/;"	m	class:engine
+fps	engine.h	/^	float fps;$/;"	m	class:engine
+fps	time/time.h	/^	float fps;$/;"	m	class:GlobalTime
+frameStartTime	time/time.h	/^	long frameStartTime;$/;"	m	class:GlobalTime
+framesec	time/time.h	/^	float framesec;$/;"	m	class:GlobalTime
+frametime	time/time.h	/^	long frametime;$/;"	m	class:GlobalTime
+ftime	engine.h	/^	long ftime;$/;"	m	class:engine
+g	res.h	/^	float g;$/;"	m	struct:glRGBA
+g	tga/tga.h	/^	unsigned char g;$/;"	m	struct:rgb_t
+g	tga/tga.h	/^	unsigned char g;$/;"	m	struct:rgba_t
+getCurrent	mm/list.h	/^	ListElement<C> *getCurrent()$/;"	f	class:List
+glPrint	font/font.cpp	/^void FontLib::glPrint( const char *fmt, ... )$/;"	f	class:FontLib
+glRGBA	res.h	/^struct glRGBA$/;"	s
+gravity	physics/gravitywell.cpp	/^void GravityWell::gravity(Object *other)$/;"	f	class:GravityWell
+height	physics/object.h	/^	float length,width,height;$/;"	m	class:Object
+height	texture/texture.h	/^	int width, height;$/;"	m	class:texture
+height	tga/tga.h	/^	unsigned short height;$/;"	m	struct:tgaheader_t
+idLength	tga/tga.h	/^	unsigned char idLength;$/;"	m	struct:tgaheader_t
+imageDesc	tga/tga.h	/^	unsigned char imageDesc;$/;"	m	struct:tgaheader_t
+imageTypeCode	tga/tga.h	/^	unsigned char imageTypeCode;$/;"	m	struct:tgaheader_t
+keys	engine.h	/^	Uint8 *keys;$/;"	m	class:engine
+last	mm/list.h	/^	ListElement<C> *last;$/;"	m	class:List
+length	physics/object.h	/^	float length,width,height;$/;"	m	class:Object
+lifetime	physics/particle.h	/^	float lifetime;$/;"	m	struct:Particle
+linkage	physics/object.h	/^	Object *linkage;$/;"	m	class:Object
+m_colorDepth	tga/tga.h	/^	unsigned char m_colorDepth;$/;"	m	class:CTargaImage
+m_height	tga/tga.h	/^	unsigned short m_height;$/;"	m	class:CTargaImage
+m_imageDataFormat	tga/tga.h	/^	unsigned char m_imageDataFormat;$/;"	m	class:CTargaImage
+m_imageDataType	tga/tga.h	/^	unsigned char m_imageDataType;$/;"	m	class:CTargaImage
+m_imageSize	tga/tga.h	/^	unsigned long m_imageSize;$/;"	m	class:CTargaImage
+m_pImageData	tga/tga.h	/^	unsigned char *m_pImageData;$/;"	m	class:CTargaImage
+m_width	tga/tga.h	/^	unsigned short m_width;$/;"	m	class:CTargaImage
+magnitude	vector/vector.cpp	/^double Vector::magnitude()$/;"	f	class:Vector
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	mm/listtest.cpp	/^int main()$/;"	f
+mass	physics/object.h	/^	double mass;$/;"	m	class:Object
+mouseX	engine.h	/^	int mouseX,mouseY;$/;"	m	class:engine
+mouseXRot	engine.h	/^	float mouseXRot, mouseYRot;$/;"	m	class:engine
+mouseY	engine.h	/^	int mouseX,mouseY;$/;"	m	class:engine
+mouseYRot	engine.h	/^	float mouseXRot, mouseYRot;$/;"	m	class:engine
+move	physics/object.cpp	/^void Object::move()$/;"	f	class:Object
+na	res.h	/^	int na,nb,nc;$/;"	m	struct:Triangle
+nb	res.h	/^	int na,nb,nc;$/;"	m	struct:Triangle
+nc	res.h	/^	int na,nb,nc;$/;"	m	struct:Triangle
+next	mm/list.h	/^	ListElement<C> *next;$/;"	m	class:ListElement
+nextElement	mm/list.cpp	/^void List<class C>::nextElement()$/;"	f	class:List
+nextElement	mm/list.h	/^	bool nextElement()$/;"	f	class:List
+normalize	vector/vector.cpp	/^Vector Vector::normalize()$/;"	f	class:Vector
+operator *	vector/vector.cpp	/^Vector Vector::operator* (double s)$/;"	f	class:Vector
+operator *=	vector/vector.cpp	/^void Vector::operator*= (double s)$/;"	f	class:Vector
+operator +	vector/vector.cpp	/^Vector Vector::operator+ (Vector p)$/;"	f	class:Vector
+operator +=	vector/vector.cpp	/^void Vector::operator+= (Vector p)$/;"	f	class:Vector
+operator -	vector/vector.cpp	/^Vector Vector::operator- (Vector p)$/;"	f	class:Vector
+operator -=	vector/vector.cpp	/^void Vector::operator-= (Vector p)$/;"	f	class:Vector
+operator /	vector/vector.cpp	/^Vector Vector::operator\/ (double s)$/;"	f	class:Vector
+operator /=	vector/vector.cpp	/^void Vector::operator\/= (double s)$/;"	f	class:Vector
+operator =	texture/texture.cpp	/^texture texture::operator = (texture p)$/;"	f	class:texture
+operator =	vector/vector.cpp	/^void Vector::operator= (Vector p)$/;"	f	class:Vector
+particles	physics/particle.h	/^	Particle *particles;$/;"	m	class:ParticleMgr
+peng	test.cpp	/^ParticleMgr peng;$/;"	v
+pos	physics/object.h	/^	Vector pos;$/;"	m	class:Object
+pos	physics/particle.h	/^	Vector pos,velocity;$/;"	m	struct:Particle
+prev	mm/list.h	/^	ListElement<C> *prev;$/;"	m	class:ListElement
+prevElement	mm/list.cpp	/^void List<class C>::prevElement()$/;"	f	class:List
+prevElement	mm/list.h	/^	bool prevElement()$/;"	f	class:List
+r	res.h	/^	float r;$/;"	m	struct:glRGBA
+r	tga/tga.h	/^	unsigned char r;$/;"	m	struct:rgb_t
+r	tga/tga.h	/^	unsigned char r;$/;"	m	struct:rgba_t
+render	physics/object.cpp	/^void Object::render()$/;"	f	class:Object
+res	engine.h	/^	int res;$/;"	m	class:engine
+resetList	mm/list.cpp	/^void List<class C>::resetList()$/;"	f	class:List
+resetList	mm/list.h	/^	void resetList()$/;"	f	class:List
+rgb_t	tga/tga.h	/^struct rgb_t$/;"	s
+rgba_t	tga/tga.h	/^struct rgba_t$/;"	s
+rotate	physics/object.cpp	/^void Object::rotate(float nYaw)$/;"	f	class:Object
+scale	physics/particle.h	/^	float scale;$/;"	m	struct:Particle
+self	mm/list.h	/^	C *self;$/;"	m	class:ListElement
+setTexture	physics/object.cpp	/^void Object::setTexture(texture *t)$/;"	f	class:Object
+sheight	res.h	17;"	d
+size	physics/object.h	/^	float size;$/;"	m	class:Object
+startColor	physics/particle.h	/^	glRGBA startColor;$/;"	m	struct:Particle
+startTime	time/time.h	/^	long startTime;$/;"	m	class:GlobalTime
+starttime	physics/object.h	/^	long starttime;$/;"	m	class:Object
+state	physics/particle.h	/^	bool state;$/;"	m	struct:Particle
+swidth	res.h	16;"	d
+t	mm/listtest.cpp	/^class t$/;"	c	file:
+t	test.cpp	/^texture *t;$/;"	v
+targtime	engine.h	/^	long targtime;$/;"	m	class:engine
+tex	physics/object.h	/^	texture *tex;$/;"	m	class:Object
+tex	physics/particle.h	/^	texture *tex;$/;"	m	struct:Particle
+tex	texture/texture.h	/^	unsigned int tex;$/;"	m	class:texture
+texture	texture/texture.cpp	/^texture::texture(char *file)$/;"	f	class:texture
+texture	texture/texture.h	/^	texture(){}$/;"	f	class:texture
+texture	texture/texture.h	/^class texture$/;"	c
+tgaheader_t	tga/tga.h	/^struct tgaheader_t$/;"	s
+ttt	engine.h	/^	float ttt;$/;"	m	class:engine
+type	physics/particle.h	/^	int type;$/;"	m	struct:Particle
+va	res.h	/^	int va,vb,vc;$/;"	m	struct:Triangle
+vb	res.h	/^	int va,vb,vc;$/;"	m	struct:Triangle
+vc	res.h	/^	int va,vb,vc;$/;"	m	struct:Triangle
+velocity	physics/object.h	/^	Vector velocity;$/;"	m	class:Object
+velocity	physics/particle.h	/^	Vector pos,velocity;$/;"	m	struct:Particle
+width	physics/object.h	/^	float length,width,height;$/;"	m	class:Object
+width	texture/texture.h	/^	int width, height;$/;"	m	class:texture
+width	tga/tga.h	/^	unsigned short width;$/;"	m	struct:tgaheader_t
+x	mm/listtest.cpp	/^	int x,y;$/;"	m	class:t	file:
+x	res.h	/^	float x,y,z;$/;"	m	struct:Vertex
+x	res.h	/^	float x,y;$/;"	m	struct:Vertex2D
+x	vector/vector.h	/^	float x,y,z;$/;"	m	class:Vector
+xOrigin	tga/tga.h	/^	unsigned short xOrigin;$/;"	m	struct:tgaheader_t
+y	mm/listtest.cpp	/^	int x,y;$/;"	m	class:t	file:
+y	res.h	/^	float x,y,z;$/;"	m	struct:Vertex
+y	res.h	/^	float x,y;$/;"	m	struct:Vertex2D
+y	vector/vector.h	/^	float x,y,z;$/;"	m	class:Vector
+yOrigin	tga/tga.h	/^	unsigned short yOrigin;$/;"	m	struct:tgaheader_t
+yaw	physics/object.h	/^	float yaw;$/;"	m	class:Object
+z	res.h	/^	float x,y,z;$/;"	m	struct:Vertex
+z	vector/vector.h	/^	float x,y,z;$/;"	m	class:Vector
+~CTargaImage	tga/tga.cpp	/^CTargaImage::~CTargaImage()$/;"	f	class:CTargaImage
+~List	mm/list.h	/^	~List()$/;"	f	class:List
+~ListElement	mm/list.h	/^	~ListElement()$/;"	f	class:ListElement
+~Object	physics/object.cpp	/^Object::~Object()$/;"	f	class:Object
+~ParticleMgr	physics/particle.cpp	/^ParticleMgr::~ParticleMgr()$/;"	f	class:ParticleMgr
+~engine	engine.cpp	/^engine::~engine(){}$/;"	f	class:engine

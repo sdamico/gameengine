@@ -1,0 +1,21 @@
+C3ds missile resources/models/rocket.3ds perpixel 1.0
+C3ds soyuz resources/models/soyuztma-3.3ds perpixel 1.0
+C3ds ship resources/models/ship.3ds perpixel 1.0
+C3ds space resources/models/sky.3ds - 1000000.0
+C3ds asteroid resources/models/asteroid.3ds perpixel 1.0
+Faction Enemy Enemy
+Faction Default Default
+Ship Enemy-01 Enemy soyuz 50000.0 21800.0 1500.0 0 0 0 20000.0 5.0
+Ship Enemy-02 Enemy soyuz 3000.0 21800.0 15200.0 0 0 0 20000.0 5.0
+Ship Enemy-03 Enemy soyuz 6000.0 21800.0 15400.0 0 0 0 20000.0 5.0
+Ship Enemy-04 Enemy soyuz 9000.0 21800.0 15600.0 0 0 0 20000.0 5.0
+Ship Enemy-05 Enemy soyuz 12000.0 21800.0 15080.0 0 0 0 20000.0 5.0
+Ship Enemy-06 Enemy soyuz 15000.0 21800.0 10600.0 0 0 0 20000.0 5.0
+Ship Ally-01 Default soyuz 0.0 21800.0 1500.0 0 0 0 20000.0 5.0
+Ship Ally-02 Default soyuz -3300.0 21800.0 15200.0 0 0 0 20000.0 5.0
+Ship Ally-03 Default soyuz -23000.0 21800.0 -5400.0 0 0 0 20000.0 5.0
+Ship Ally-04 Default soyuz 92000.0 -3800.0 -5600.0 0 0 0 20000.0 5.0
+Ship Ally-05 Default soyuz 2000.0 -1800.0 -8730.0 0 0 0 20000.0 5.0
+Ship Ally-06 Default soyuz -15000.0 21800.0 10600.0 0 0 0 20000.0 5.0
+Player player Default ship -15000.0 -1800 10000.0 0 0 0 20000.0 5.0
+GravityWell asteroid-2 asteroid 340000 35000 0 0 0 0 1e20 200000
